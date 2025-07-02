@@ -3,7 +3,7 @@ import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
 
 // Create Scene
 const scene = new THREE.Scene();
-scene.background = new THREE.Color(0x000000); // Pure black background for contrast
+scene.background = new THREE.Color(0x000000); 
 
 // Create Camera
 const camera = new THREE.PerspectiveCamera(
@@ -88,18 +88,18 @@ scene.add(sun);
 
 // Planet Data
 const planetData = [
-  { name: "Mercury", color: 0x909090, size: 0.2, dist: 5, speed: 0.02 },       // Gray rocky
-  { name: "Venus", color: 0xeccc9a, size: 0.4, dist: 7, speed: 0.015 },        // Pale yellow
-  { name: "Earth", color: 0x2e8b57, size: 0.5, dist: 10, speed: 0.01 },        // Green-blue
-  { name: "Mars", color: 0xb22222, size: 0.3, dist: 13, speed: 0.008 },        // Reddish
-  { name: "Jupiter", color: 0xd2b48c, size: 1.2, dist: 17, speed: 0.005 },     // Sandy brown
-  { name: "Saturn", color: 0xf5deb3, size: 1.0, dist: 21, speed: 0.003 },      // Wheat-like beige
-  { name: "Uranus", color: 0x66cccc, size: 0.8, dist: 25, speed: 0.002 },      // Pale cyan
-  { name: "Neptune", color: 0x2f4f4f, size: 0.8, dist: 29, speed: 0.0015 }     // Deep sea blue
+  { name: "Mercury", color: 0x909090, size: 0.2, dist: 5, speed: 0.02 },       
+  { name: "Venus", color: 0xeccc9a, size: 0.4, dist: 7, speed: 0.015 },       
+  { name: "Earth", color: 0x2e8b57, size: 0.5, dist: 10, speed: 0.01 },        
+  { name: "Mars", color: 0xb22222, size: 0.3, dist: 13, speed: 0.008 },        
+  { name: "Jupiter", color: 0xd2b48c, size: 1.2, dist: 17, speed: 0.005 },     
+  { name: "Saturn", color: 0xf5deb3, size: 1.0, dist: 21, speed: 0.003 },      
+  { name: "Uranus", color: 0x66cccc, size: 0.8, dist: 25, speed: 0.002 },     
+  { name: "Neptune", color: 0x2f4f4f, size: 0.8, dist: 29, speed: 0.0015 }     
 ];
 
 // Create Planets and Orbit Lines
-const labels = []; // For storing planet name labels
+const labels = []; 
 const planets = [];
 planetData.forEach((p) => {
   const geometry = new THREE.SphereGeometry(p.size, 32, 32);
